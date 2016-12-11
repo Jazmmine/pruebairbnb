@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="initial-scale=1.0">
+  <title>Airbnb|Search</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/nouislider.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>    
+  </header>
+  <section class="section-search row">
+    <div class="col l7">
+        <div class="row">
+          <div class="col l12">
+            <div class="row">
+              <!--fechas aa-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Fechas</label>
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="llegada" type="date" class="validate input-border" placeholder="Llegada">
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="salida" type="date" class="validate input-border" placeholder="Salida">
+                    </div> 
+                    <div class="input-field col l3 ">
+                      <select class="browser-default input-border">
+                        <option value="1">1 huésped</option>
+                        <option value="2">2 huéspedes</option>
+                        <option value="3">3 huéspedes</option>
+                      </select>
+                    </div>             
+                  </div>
+                  <div class="divider divider-margin"></div>
+              <!--tipo de habitación-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Tipo de habitación<i class="small material-icons">&#xE887;</i></label>
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="casa" type="text" class="datepicker input-border" placeholder="Casa entera">
+                    </div>
+                    <div class="input-field col l3">
+                      <input id="habitacionP" type="text" class="datepicker input-border" placeholder="Habitación privada">
+                    </div> 
+                    <div class="input-field col l3 ">
+                      <input id="habitacionC" type="text" class="datepicker input-border" placeholder="Habitación compartida">
+                    </div>             
+                  </div>
+                  <div class="divider divider-margin"></div>
+              <!--rango de precios-->
+                  <div class="row">
+                    <div class="input-field col l3">
+                      <label for="last_name">Rango de precios</label>
+                    </div>
+                    <div class="input-field col l9">
+                      <input id="rango" type="text">
+                    </div>            
+                  </div>
+                  <div class="divider divider-margin"></div>
+                </div>
+              <!--reserva inmediata-->
+              <div class="row">
+                <div class="input-field col l3">
+                  <label for="last_name"><i class="material-icons">&#xE3E7;</i>Reserva inmediata</label>
+                </div>
+                <div class="input-field col l5">
+                  <p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+                </div>
+                <div class="input-field col l4">
+                    <div class="switch">
+                      <label>
+                        Off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        On
+                      </label>
+                    </div>
+                </div>            
+              </div>
+              <div class="divider divider-margin"></div>
+            </div>
+            <div class="row">
+              <div class="col l12">
+                <div class="row">
+                  <div class="col l6">
+                    <a class="waves-effect waves-light btn">Filtros</a>
+                  </div>
+                  <div class="col l6">
+                    <p>Más de 300 alquileres</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
+                </div>
+              </div>    
+          </div>
+        </div>
+        </div>
+    </div>
+    <div  class="size-section col l5">
+      <div id="map"></div>
+    </div>
+  </section>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm1mRm4f953yxwDpuaF5oYcKAMsMRGwCE&callback=initMap" async defer></script>
+  <script src="js/nouislider.min.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
